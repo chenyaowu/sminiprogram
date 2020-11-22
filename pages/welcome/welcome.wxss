@@ -11,7 +11,7 @@
   margin-top: 160rpx;
 }
 .motto{
-  color: #666;
+  font-weight: bold;
   margin-top: 100rpx;
   font-size: 32rpx;
 }
@@ -22,11 +22,16 @@
   height: 80rpx;
   border-radius: 5px;
   text-align: center;
+  margin-top: 200rpx;
 }
 
 .journey{
   font-size: 22rpx;
-  color: #305f80;
-  line-height: 80rpx; 
+  color:#405f80;
+  line-height: 80rpx;
   font-weight: bold;
+}
+
+page{
+  background-color: #b3d4db;
 }
