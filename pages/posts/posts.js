@@ -1,4 +1,7 @@
-// pages/welcome/welcome.js
+// pages/posts/posts.js
+
+import {postList} from '../../data/data'
+
 Page({
 
   /**
@@ -7,16 +10,21 @@ Page({
   data: {
 
   },
-  onTap: function(params){
-    wx.redirectTo({
-      url: '/pages/posts/posts'
+
+  onGotoDetail(event){
+    wx.navigateTo({
+      url: '/pages/post-detail/post-detail'
     })
   },
+  
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad(options) {
 
+    this.setData({
+      postList
+    })
   },
 
   /**

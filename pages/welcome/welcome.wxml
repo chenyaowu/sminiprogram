@@ -4,7 +4,7 @@
   <!-- <l-avatar placement="bottom" shape="circle" open-data="{{['userAvatarUrl', 'userNickName']}}" size="200"></l-avatar> -->
   <text class="motto">Hello,七月</text>
   <view class="journey-container">
-    <text class="journey">开启小程序之旅</text>
+    <text class="journey" bind:tap="onTap">开启小程序之旅</text>
   </view>
 </view>
 

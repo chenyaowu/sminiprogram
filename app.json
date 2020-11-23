@@ -1,13 +1,21 @@
 {
   "pages":[
-    "pages/welcome/welcome"
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/post-detail/post-detail"
   ],
+  
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#b3d4db",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#C22A1E"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index"
+  }
+ 
 }
