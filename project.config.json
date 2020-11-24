@@ -66,6 +66,18 @@
         {
           "name": "pages/post-detail/post-detail",
           "pathName": "pages/post-detail/post-detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movies/movies",
+          "pathName": "pages/movies/movies",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/more-movies/more-movies",
+          "pathName": "pages/more-movies/more-movies",
           "scene": null
         }
       ]

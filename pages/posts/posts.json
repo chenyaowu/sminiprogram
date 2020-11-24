@@ -1,4 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "post": "/components/post/index"
+  }
   
 }
