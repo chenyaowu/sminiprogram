@@ -1,33 +1,32 @@
-// pages/posts/posts.js
-
-import {postList} from '../../data/data'
-
+// pages/movies-detail/movies-detail.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    movie:{}
   },
 
-  onGotoDetail(event){
-   let pid = event.currentTarget.dataset.postId;
-   if(pid === undefined){
-     pid = event.detail.pid
-   }
-    wx.navigateTo({
-      url: '/pages/post-detail/post-detail?pid=' + pid 
-    })
-  },
-  
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  onLoad: function (options) {
+    const mid = options.mid;
+    wx.request({
+      url: app.gBaseUrl +  'subject/' + mid,
+      success:(res)=>{
+        this.setData({
+          movie: res.data
+        })
+      }
+    })
+  },
 
-    this.setData({
-      postList
+  onViewPost(event){
+    wx.previewImage({
+      urls: [this.data.movie.images.large],
     })
   },
 

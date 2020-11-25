@@ -18,6 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+ 
+    onTap(event){
+      const pid = this.properties.res.postId;
+      const title = this.properties.res.title;
+      this.triggerEvent('posttap',{pid, title})
+    }
   }
 })

@@ -78,6 +78,13 @@
         {
           "name": "pages/more-movies/more-movies",
           "pathName": "pages/more-movies/more-movies",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movies-detail/movies-detail",
+          "pathName": "pages/movies-detail/movies-detail",
+          "query": "mid=305",
           "scene": null
         }
       ]
